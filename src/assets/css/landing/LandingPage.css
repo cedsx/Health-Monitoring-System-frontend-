@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+header{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.145);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+header{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.145);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header img{
+    height: 50px;
+}
+
+header img:hover {
+    animation: zoom 1s infinite alternate;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;    
+    color: #6E9FC0;
+    font-weight: 600;
+}
+
+nav span:nth-child(2){
+    margin: 0 55px;
+}
+
+nav span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+nav span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 50%; 
+    width: 0;
+    height: 3px; 
+    background-color: 6E9FC0;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+nav span:hover {
+    color: #6E9FC0;
+}
+
+nav span:hover::after {
+    width: 100%; 
+}
+
+nav span:active{
+    opacity: 0.8;
+}
+
+
+.LandingPage__login-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.LandingPage__login-btn{
+    background-color: #6E9FC0;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.Landing__signup-btn:hover{
+    color: #fff;
+    background-color: #6E9FC0;
+}
+
+.LandingPage__login-btn:focus{
+    outline: none;
+}
+
+.LandingPage__login-btn:active{
+    opacity: 0.8;
+}
+
+/* main content */
+main{
+    display: flex;
+    margin-top: 50px;
+    height: 90vh;
+    padding:  0 0 0 40px;
+    overflow: hidden;
+}
+
+
+/* left container */
+.LandingPage__left-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;  
+    padding: 85px 20px 20px 50px;
+}
+
+.LandingPage__left-container h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #39597E;
+    font-size: 50px;
+}
+
+.LandingPage__left-container h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    color: #39597E;
+    font-size: 20px;
+}
+
+.LandingPage__left-container p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    color: #39597E;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/* right container */
+.LandingPage__right-container{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding: 85px 20px 20px 50px;
+}
+
+.LandingPage__landingImage{
+    position: absolute;
+    width: 90%;
+    height: 100;
+    right: 15;
+
+}

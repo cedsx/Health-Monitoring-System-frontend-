@@ -106,7 +106,7 @@ export const DashboardAdmin = () => {
 
         {/* Welcome Box with Time & Date */}
         <div className="welcome-box">
-          <h2>Welcome, Admin</h2>
+          <h2>Welcome, <span> Admin </span> </h2>
           <div className="time-box">
             <h1>{currentTime.toLocaleTimeString()}</h1>
             <h3>{currentTime.toLocaleDateString()}</h3>

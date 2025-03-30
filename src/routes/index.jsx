@@ -5,6 +5,7 @@ import { LandingPage } from "pages/landing/LandingPage";
 
 // admin imports
 import { DashboardAdmin} from "pages/admin/dashboard";
+import { InventoryAdmin} from "pages/admin/inventory";
 
 // another user (EX: customer)
 
@@ -16,6 +17,8 @@ const MainRoutes = () => {
 
         <Route path="/admin/">
           <Route path="dashboard" element={ <DashboardAdmin/> }/>
+          <Route path="inventory" element={ <InventoryAdmin/> }/>
+           
         </Route>
 
       </Routes>

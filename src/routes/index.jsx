@@ -16,11 +16,6 @@ const MainRoutes = () => {
 
         <Route path="/admin/">
           <Route path="dashboard" element={ <DashboardAdmin/> }/>
-          {/* 
-            <Route path="notification" element={ <NotificationAdmin/> }/> 
-            eto sample lang ganto ang gawin mo sa susunod na page if sa admin kung sa ibang user naman like
-            customer for EXAMPLE is  gagawa ka nang katulad netonf admin na nesting (pede mo to delete yung comment)
-          */}
         </Route>
 
       </Routes>
@@ -29,3 +24,32 @@ const MainRoutes = () => {
 };
 
 export default MainRoutes;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {/* 
+            <Route path="notification" element={ <NotificationAdmin/> }/> 
+            eto sample lang ganto ang gawin mo sa susunod na page if sa admin kung sa ibang user naman like
+            customer for EXAMPLE is  gagawa ka nang katulad netonf admin na nesting (pede mo to delete yung comment)
+          */}

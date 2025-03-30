@@ -59,9 +59,8 @@ export const LandingPage = () => {
                 <img src={passwordIcon} alt="password-icon" className="input-icon" />
                 <input type="password" placeholder="Password" required />
               </div>
-
-              <button className="login-button">Log In</button>
               <a href="#" className="forgot-password">Forgot Password?</a>
+              <button className="login-button">Log In</button>
 
               <button className="close-button" onClick={() => setIsModalOpen(false)}>✖</button>
             </div>

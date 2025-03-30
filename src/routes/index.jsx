@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { LandingPage } from "pages/landing/LandingPage";
 
+// layouts
+import { AdminLayout} from "layouts/main_layouts";
+
 // admin imports
 import { DashboardAdmin} from "pages/admin/dashboard";
 import { InventoryAdmin} from "pages/admin/inventory";
@@ -15,7 +18,7 @@ const MainRoutes = () => {
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
 
-        <Route path="/admin/">
+        <Route path="/admin/" element={<AdminLayout/>}>
           <Route path="dashboard" element={ <DashboardAdmin/> }/>
           <Route path="inventory" element={ <InventoryAdmin/> }/>
            
